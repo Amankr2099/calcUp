@@ -57,15 +57,15 @@ function App() {
   };
 
   return (
-    <div>
-      <div className="p-5 bg-success mb-1 rounded text-center text-white">
+    <div >
+      <div className="p-5 bg-success mb-1 rounded text-center text-white mt-5">
         <h2>Calculation Sharpner</h2>
       </div>
 
       <div className="text-center p-5 rounded bg-info">
         {!showTable && (
           <div>
-            <h4>Enter number of problems:</h4>
+            <h6>Enter number of problems:</h6>
             <div className="mb-3">
               <input
                 type="number"
@@ -74,7 +74,7 @@ function App() {
                 onChange={(e) => setNumRows(e.target.value)}
               />
             </div>
-            <h4>Enter number of numbers:</h4>
+            <h6>Enter number of numbers:</h6>
             <div className="mb-3">
               <input
                 type="number"
@@ -109,7 +109,7 @@ function App() {
                 <option value="1000">1000</option>
               </select>
             </div>
-            <button className="btn btn-primary" onClick={handleLoadTable}>
+            <button className="btn btn-primary btn-sm mt-3" onClick={handleLoadTable}>
               Load Table
             </button>
           </div>
